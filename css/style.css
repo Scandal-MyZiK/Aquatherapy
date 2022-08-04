@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'ElMessiri';
+  src: url("../fonts/EIMessiri/ElMessiri-Bold.woff") format("woff"), url("../fonts/EIMessiri/ElMessiri-Bold.woff2") format("woff2");
+  font-weight: 700; }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/ProximaNova/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Light.woff2") format("woff2");
+  font-weight: 300; }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular.woff2") format("woff2");
+  font-weight: 400; }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Semibold.woff2") format("woff2");
+  font-weight: 600; }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Bold.woff2") format("woff2");
+  font-weight: 700; }
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -33,9 +53,82 @@ body {
   font-size: 14px;
   line-height: 140%;
   color: #FFFFFF;
-  background-color: #E5E5E5; }
+  background-color: #162831;
+  font-family: 'ProximaNova', sans-serif; }
 
 .container {
-  max-width: 1100px;
+  max-width: 1296px;
   width: 90%;
   margin: 0 auto; }
+
+.header__inner {
+  padding: 30px 0 150px; }
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px; }
+.header__bottom {
+  background-image: url("../images/header-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 136px 0 210px; }
+.header__logo {
+  max-width: 60px; }
+.header__btn {
+  padding: 9px 15px;
+  background-color: #018ABE;
+  border-radius: 3px; }
+  .header__btn:hover {
+    background-color: #0074a1; }
+.header__btn-text {
+  font-size: 13px;
+  color: #FFFFFF; }
+.header__subtitle {
+  font-family: 'ElMessiri', sans-serif;
+  font-size: 24px;
+  margin-bottom: 40px;
+  position: relative; }
+  .header__subtitle::before {
+    content: '';
+    position: absolute;
+    background-image: url("../images/headerleft-petal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28px;
+    height: 14px;
+    left: 434px; }
+  .header__subtitle::after {
+    content: '';
+    position: absolute;
+    background-image: url("../images/header-right-petal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28px;
+    height: 14px;
+    right: 434px; }
+.header__title {
+  font-family: 'ElMessiri', sans-serif;
+  font-size: 64px;
+  line-height: 140%;
+  max-width: 587px;
+  margin: 0 auto; }
+
+.header-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px; }
+.header-menu__links {
+  line-height: 135%; }
+  .header-menu__links:hover {
+    color: #cacaca; }
