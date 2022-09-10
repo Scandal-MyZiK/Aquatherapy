@@ -2,15 +2,7 @@
     box-sizing: border-box;
 }
 
-h1 {
-    margin: 0;
-}
-
-h2 {
-    margin: 0;
-}
-
-p {
+h1, h2, h3, p{
     margin: 0;
 }
 
@@ -39,9 +31,9 @@ html {
 
 body {
     font-size: 14px;
-    line-height: 140%;
-    color: #FFFFFF;
-    background-color: #162831;
+    line-height: 1.4;
+    color: $white;
+    background-color: $body-color;
     font-family: 'ProximaNova', sans-serif;
 }
 
@@ -49,4 +41,69 @@ body {
     max-width: 1296px;
     width: 90%;
     margin: 0 auto;
+    &--small {
+        max-width: 1076px;
+    }
+}
+
+.frame {
+    font-family: 'ProximaNova', sans-serif;
+    line-height: 135%;
+    font-size: 14px;
+    background-color: $primary;
+    border-radius: 5px;
+    padding: 6px 12px;
+    text-align: center;
+    font-weight: 700;
+    width: 96px;
+}
+
+.menu-btn {
+    display: none;
+    width: 40px;
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+    height: 30px;
+    span {
+        display: block;
+        height: 2px;
+        background-color: $white;
+        position: relative;
+        left: 0;
+
+        &::before,
+        &::after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: $white;
+            position: absolute;
+            left: 0;
+            transition: 0.3s;
+        }
+        &::before {
+            transform: translateY(-12px);
+        }
+        &::after {
+            transform: translateY(12px);
+        }
+    }
+    &.active {
+        span {
+            height: 0;
+        }
+
+        span::before {
+            transform: rotate(45deg);
+        }
+
+        span::after {
+            transform: rotate(-45deg);
+        }
+    }
+    @media (max-width: 1000px) {
+        display: block;
+        z-index: 2;
+    }
 }

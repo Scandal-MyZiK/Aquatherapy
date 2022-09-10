@@ -1,64 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aquatherapy</title>
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./libs/swiper/swiper.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__inner">
                 <div class="header__top">
-                    <a class="header__link" href="/" >
-                        <img class="header__logo" src="./images/header-logo.svg" alt="" >
+                    <a class="header__logo" href="/" >
+                        <img class="header__photo" src="./images/header-photo.svg" alt="" >
                     </a>
                     <nav class="header__menu header-menu">
                         <ul class="header-menu__list">
                             <li class="header-menu__item">
-                                <a href="#" class="header-menu__links">
+                                <a href="/" class="header-menu__link">
                                     Главная
                             </a>
                             </li>
                             <li class="header-menu__item">
-                                <a href="#" class="header-menu__links">
+                                <a href="sessions.html" class="header-menu__link">
                                     Сеансы
                             </a>
                             </li>
                             <li class="header-menu__item">
-                                <a href="#" class="header-menu__links">
+                                <a href="#reviews" class="header-menu__link">
                                     Отзывы
                             </a>
                             </li>
                             <li class="header-menu__item">
-                                <a href="#" class="header-menu__links">
+                                <!-- Ведёт не на контакты -->
+                                <a href="#contacts" class="header-menu__link">
                                     Контакты
                             </a>
                             </li>
                             <li class="header-menu__item">
-                                <a href="#" class="header-menu__links">
+                                <a href="news.html" class="header-menu__link">
                                     Новости
                             </a>
                             </li>
                             <li class="header-menu__item">
-                                <a href="#" class="header-menu__links">
+                                <a href="#about" class="header-menu__link">
                                     Обо мне
                             </a>
                             </li>
                             <li class="header-menu__item">
-                                <a href="#" class="header-menu__links">
+                                <a href="blog.html" class="header-menu__link">
                                     Блог
                             </a>
                             </li>
                         </ul>
                     </nav>
-                    <button class="header__btn">
+                    <button class="header__btn open-popup">
                         <p class="header__btn-text">
                             Записаться на сеанс
                         </p>
+                    </button>
+                    <button class="menu-btn">
+                        <span></span>
                     </button>
                 </div>
                 <div class="header__bottom">
@@ -69,10 +74,272 @@
                         Акватерапия RitmStyle
                     </h1>
                 </div>
-            </div>
         </div>
     </header>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <main class="main">
+        <section class="services">
+            <div class="container">
+                        <h2 class="title">
+                            <p class="title__text">
+                                Сеансы RitmStyle
+                            </p>
+                        </h2>
+                    <div class="services__bottom services-bottom">
+                        <ul class="services-bottom__list">
+                            <li class="services-bottom__item services-bottom__item--1">
+                                <img src="./images/services-img-big.png" alt="" class="services-bottom__img">
+                                <a class="services-bottom__link" href="#contacts">
+                                    Стандартный RitmStyle
+                                </a>
+                            </li>
+                            <li class="services-bottom__item services-bottom__item">
+                                <img src="./images/services-img-small.png" alt="" class="services-bottom__img">
+                                <a class="services-bottom__link" href="#contacts">
+                                    RitmStyle для пар
+                                </a>
+                            </li>
+                            <li class="services-bottom__item services-bottom__item">
+                                <img src="./images/services-img-small.png" alt="" class="services-bottom__img">
+                                <a class="services-bottom__link" href="#contacts">
+                                    RitmStyle с полным погружением под воду
+                                </a>
+                            </li>
+                            <li class="services-bottom__item services-bottom__item">
+                                <img src="./images/services-img-small.png" alt="" class="services-bottom__img">
+                                <a class="services-bottom__link" href="#contacts">
+                                    RitmStyle для беременных
+                                </a>
+                            </li>
+                            <li class="services-bottom__item services-bottom__item">
+                                <img src="./images/services-img-small.png" alt="" class="services-bottom__img">
+                                <a class="services-bottom__link" href="#contacts">
+                                    RitmStyle + красочная подводная фотосессия
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
+            </div>
+        </section>
+        <section class="reviews" id="reviews">
+            <div class="container">
+                        <h2 class="title">
+                            <p class="title__text">
+                                Отзывы
+                            </p>
+                        </h2>
+            </div>
+            <div class="reviews-container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card">
+                            <div class="card__inner">
+                                <p class="card__title">Александра Дмитриева</p>
+                                <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit. </p>
+                                <p class="card__text">Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card__inner">
+                                <p class="card__title">Кира Иванова</p>
+                                <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit. </p>
+                                <p class="card__text">Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card__inner">
+                                <p class="card__title">Яна Жернова</p>
+                                <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit. </p>
+                                <p class="card__text">Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card__inner">
+                                <p class="card__title">Кира Иванова</p>
+                                <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit. </p>
+                                <p class="card__text">Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section  class="about" id="about">
+            <div class="container container--small">
+                        <h2 class="title">
+                            <p class="title__text">
+                                Об RitmStyle
+                            </p>
+                        </h2>
+                    <div class="about__bottom">
+                        <div class="about__block">
+                            <div class="about__info">
+                                <h3 class="about__title">
+                                    RitmStyle массаж 
+                                </h3>
+                                <p class="about__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet amet. Diam nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.
+                                </p>
+                                <p class="about__text">
+                                    Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor at tempor.
+                                </p>
+                            </div>
+                            <div class="about__photo">
+                                <img src="./images/about-img.jpg" alt="" class="about__img">
+                            </div>
+                        </div>
+                        <div class="about__block">
+                            <div class="about__info">
+                                <h3 class="about__title">
+                                    RitmStyle массаж 
+                                </h3>
+                                <p class="about__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet amet. Diam nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.
+                                </p>
+                                <p class="about__text">
+                                    Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor at tempor.
+                                </p>
+                            </div>
+                            <div class="about__photo">
+                                <img src="./images/about-img.jpg" alt="" class="about__img">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="price">
+            <div class="container container--small">
+                        <h2 class="title">
+                            <p class="title__text">
+                                Стоимость сеансов
+                            </p>
+                        </h2>
+                    <div class="price__bottom">
+                            <ul class="price__list">
+                                <li class="price__item">
+                                    <p class="price__text">
+                                        RitmStyle с погружением
+                                    </p>
+                                    <span class="price__money">
+                                        1000р.
+                                    </span>
+                                </li>
+                                <li class="price__item">
+                                    <p class="price__text">
+                                        Абонемент на RitmStyle
+                                    </p>
+                                    <span class="price__money">
+                                        5500р.
+                                    </span>
+                                </li>
+                                <li class="price__item">
+                                    <p class="price__text">
+                                        RitmStyle для пар
+                                    </p>
+                                    <span class="price__money">
+                                        6000р.
+                                    </span>
+                                </li>
+                                <li class="price__item">
+                                    <p class="price__text">
+                                        RitmStyle для беременных
+                                    </p>
+                                    <span class="price__money">
+                                        13500р.
+                                    </span>
+                                </li>
+                                <li class="price__item">
+                                    <p class="price__text">
+                                        RitmStyle +  фотосессия
+                                    </p>
+                                    <span class="price__money">
+                                        11500р.
+                                    </span>
+                                </li>
+                            </ul>
+                        <div class="price__photo">
+                            <img src="./images/price-img.jpg" alt="" class="price__img">
+                            <p class="price__desc">
+                                Подарочный сертификат 
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__map">
+                        <script  type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A386e9f61ecda73382770c827c3012d76c80333a57cb54241b3d00690064e3b94&amp;width=100%&amp;height=591&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                    <div class="contacts__form">
+                        <div class="contacts__block">
+                            <p class="contacts__title">
+                                Аквапарк Swan
+                            </p>
+                            <p class="contacts__street">
+                                Пр.Победителей
+                            </p>
+                            <p class="contacts__metro">
+                                М.Пушкинская
+                            </p>
+                            <p class="contacts__record">
+                                Запись по договоренности
+                            </p>
+                            <button class="contacts__btn open-popup">
+                                Записаться на сеанс
+                            </button>
+                        </div>
+                        <div class="contacts__block">
+                            <p class="contacts__title">
+                                Аквапарк Dreamland
+                            </p>
+                            <p class="contacts__street ">
+                                ул.Орловская
+                            </p>
+                            <p class="contacts__metro">
+                                м.Молодёжная
+                            </p>
+                            <p class="contacts__record">
+                                Запись по договоренности
+                            </p>
+                            <button class="contacts__btn open-popup">
+                                Записаться на сеанс
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="popup">
+        <div class="popup__container">
+            <div class="popup__body">
+                <p class="popup__text">Оставить заказ</p>
+                <form class="popup__form" action="">
+                    <input class="popup__input" type="text" placeholder="Имя">
+                    <input class="popup__input" type="text" placeholder="Телефон">
+                    <button class="popup__btn">Оставить заказ</button>
+                </form>
+                <div class="popup__close">
+                    &#10006
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer footer--border">
+        <div class="container">
+            <div class="footer__inner">
+                <p class="footer__copyright">
+                    © 2018-2022 RitmStyle
+                </p>
+                <a href="https://vk.com/misyuk99" class="footer__link">
+                    Сделано: Misyuk Alexander
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./libs/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

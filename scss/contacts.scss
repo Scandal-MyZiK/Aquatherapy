@@ -1,0 +1,124 @@
+.contacts {
+    padding-bottom: 90px;
+    @media (max-width: 500px) {
+        padding-bottom: 70px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__map {
+        width: 856px;
+        @media (max-width: 1408px) {
+            & > ymaps{
+
+            }
+            width: 90%;
+            margin: 0 auto;
+        }
+        @media (max-width: 500px) {
+            & > ymaps{
+                height: 400px !important;
+            }
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @media (max-width: 1408px) {
+            width: 90%;
+            margin: 0 auto;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        @media (max-width: 806px) {
+            flex-direction: column;
+        }
+    }
+    &__block {
+        max-width: 392px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 35px 45px;
+        background-color: $primary;
+        border-radius: 10px;
+        @media (max-width: 806px) {
+            margin: 0 auto;
+            gap: 14px;
+        }
+        @media (max-width: 400px) {
+            padding: 25px 16px;
+        }
+    }
+    &__title {
+        font-family: 'ElMessiri', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+    }
+    &__street {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-weight: 400;
+        line-height: 135%;
+        &::before {
+            content: '';
+            display: block;
+            background-image: url('../images/contacts-street.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 13px;
+            height: 17px;
+        }
+    }
+    &__metro {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-weight: 400;
+        line-height: 135%;
+        &::before {
+            content: '';
+            display: block;
+            background-image: url('../images/contacts-metro.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 20px;
+            height: 16px;
+        }
+    }
+    &__record {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-weight: 400;
+        line-height: 135%;
+        padding-bottom: 10px;
+        &::before {
+            content: '';
+            display: block;
+            background-image: url('../images/contacts-record.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &__btn {
+        font-weight: 600;
+        width: 165px;
+        padding: 9px 15px;
+        background-color: $white;
+        border-radius: 3px;
+        color: $primary;
+        &:hover {
+            background-color: $neutral-hover;
+        }
+    }
+}

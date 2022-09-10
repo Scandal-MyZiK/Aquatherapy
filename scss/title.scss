@@ -1,0 +1,40 @@
+.title{
+    font-family: 'ElMessiri', sans-serif;
+    text-align: center;
+    &__text{
+        font-size: 42px;
+        line-height: 140%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+        @media (max-width:575px) {
+            gap: 17px;
+            font-size: 36px;
+        }
+        &::before{
+            content: '';
+            display: block;
+            width: 28px;
+            height: 14px;
+            background-image: url('../images/title-left-petal.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            @media (max-width:454px) {
+                display: none;
+            }
+        }
+        &::after{
+            content: '';
+            display: block;
+            width: 28px;
+            height: 14px;
+            background-image: url('../images/title-right-petal.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            @media (max-width:454px) {
+                display: none;
+            }
+        }
+    }
+}
