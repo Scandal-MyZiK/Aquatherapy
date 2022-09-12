@@ -7,3 +7,30 @@
         padding-bottom: 50px;
     }
 }
+
+.reviews-slide {
+    padding: 40px 30px;
+    background-color: $primary;
+    border-radius: 10px;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 14px;
+    }
+}
+
+.reviews-container {
+    width: 1736px;
+    max-width: 90%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}

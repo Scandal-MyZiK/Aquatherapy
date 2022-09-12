@@ -31,6 +31,11 @@
             width: 100%;
         }
     }
+    &__frame{
+        @media (max-width:1324px) {
+            margin: 0 auto;
+        }
+    }
     &__title{
         font-family: 'ElMessiri', sans-serif;
         font-size: 24px;
@@ -47,7 +52,6 @@
     &__text{
         font-weight: 300;
         font-size: 16px;
-        line-height: 140%;
     }
     &__img{
         max-width: 636px;
